@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="620.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brillant.soft.controller.RootController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fichier">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleOuvrirClick" text="Ouvrir" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleNouveauClick" text="Nouveau" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveClick" text="Enregistrer" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAsClick" text="Enregistrer sous" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExitClick" text="Quiter" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Aide">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleAboutClick" text="A propos" /> 
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
